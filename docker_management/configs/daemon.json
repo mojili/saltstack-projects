@@ -1,0 +1,15 @@
+{
+  "data-root":"/data/docker/",	
+  "log-driver": "json-file",
+  "live-restore": true,
+  "log-opts": {
+    "max-size": "100m",
+    "max-file": "3",
+    "labels": "Container_logs",
+    "env": "os,customer"
+  },
+    "bip": "10.113.0.1/24",
+  "default-address-pools":[
+    {"base":"10.113.0.0/16","size":24}
+  ]
+}
